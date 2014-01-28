@@ -13,7 +13,7 @@ public class Book implements Serializable {
     @Id
     @Column(name = "isbn")
     @SearchableId
-    public Long id;
+    public String id;
 
     @Column
     @SearchableProperty
@@ -23,11 +23,11 @@ public class Book implements Serializable {
     @SearchableProperty
     public String author;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -6,7 +6,7 @@
 
 <p>Please fill in book's information below:</p>
 
-<form:form commandName="book" method="post" action="bookform" onsubmit="return validateBook(this)" id="bookForm">
+<form:form commandName="book" method="post" action="bookForm" onsubmit="return validateBook(this)" id="bookForm">
 <form:errors path="*" cssClass="error"/>
 <form:hidden path="id"/>
 <form:hidden path="version"/>

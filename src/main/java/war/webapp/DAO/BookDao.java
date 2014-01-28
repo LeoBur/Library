@@ -7,7 +7,7 @@ import war.webapp.Entities.Book;
 import java.util.List;
 
 @Repository
-public class BookDao extends GenericDaoHibernate<Book, Long> {
+public class BookDao extends GenericDaoHibernate<Book, String> {
 
     /**
      * Constructor that sets the entity to User.class.
@@ -17,7 +17,7 @@ public class BookDao extends GenericDaoHibernate<Book, Long> {
     }
 
     @SuppressWarnings("unchecked")
-    public List<Book> getUsers() {
+    public List<Book> getBooks() {
         return getHibernateTemplate().find("from Book b order by upper(b.title)");
     }
 

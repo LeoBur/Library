@@ -42,7 +42,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>dbunit-maven-plugin</artifactId>
                 <version>1.0-beta-3</version>
@@ -67,7 +67,7 @@
                         </goals>
                     </execution>
                     <execution>
-                        <!-- Runs before integration tests and jetty:run -->
+                        &lt;!&ndash; Runs before integration tests and jetty:run &ndash;&gt;
                         <id>test</id>
                         <phase>test</phase>
                         <goals>
@@ -82,7 +82,7 @@
                         <version>${jdbc.version}</version>
                     </dependency>
                 </dependencies>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>hibernate3-maven-plugin</artifactId>

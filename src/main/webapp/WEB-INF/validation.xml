@@ -5,15 +5,15 @@
 
 <form-validation>
     <formset>
-        <form name="user">
-            <field property="username" depends="required">
-                <arg key="user.username"/>
+        <form name="book">
+            <field property="isbn" depends="required">
+                <arg key="book.isbn"/>
             </field>
-            <field property="password" depends="required">
-                <arg key="user.password"/>
+            <field property="title" depends="required">
+                <arg key="book.title"/>
             </field>
-            <field property="email" depends="required">
-                <arg key="user.email"/>
+            <field property="author" depends="required">
+                <arg key="book.author"/>
             </field>
         </form>
     </formset>

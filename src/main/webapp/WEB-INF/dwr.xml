@@ -2,10 +2,10 @@
     "http://www.getahead.ltd.uk/dwr/dwr20.dtd">
 <dwr>
     <allow>
-        <!--create creator="spring" javascript="UserManager">
-            <param name="beanName" value="userManager"/>
-            <include method="getUsers"/>
+        <!--create creator="spring" javascript="BookManager">
+            <param name="beanName" value="bookManager"/>
+            <include method="getBooks"/>
         </create>
-        <convert converter="bean" match="LyL.model.User"/-->
+        <convert converter="bean" match="LyL.war.webapp.Entities.Book"/-->
     </allow>
 </dwr>

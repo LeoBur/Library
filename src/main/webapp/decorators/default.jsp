@@ -26,11 +26,11 @@
 
     <div id="header" class="clearfix">
 
-        <h1 style="cursor: pointer" onclick="location.href='${ctx}/'">AppFuse Light</h1>
+        <h1 style="cursor: pointer" onclick="location.href='${ctx}/'">Library 2.0</h1>
 
         <div id="branding">
-            <a href="http://appfuse.org" title="AppFuse - eliminating project startup time">
-                <img src="${ctx}/images/powered-by-appfuse.gif" width="203" height="75" alt="AppFuse"/></a>
+            <a href="http://appfuse.org" title="">
+                <img src="${ctx}/images/powered-by-appfuse.gif" width="203" height="75" alt=""/></a>
         </div>
 
         <p><fmt:message key="webapp.tagline"/></p>
@@ -51,31 +51,9 @@
         <div id="sub">
             <h3>Resources</h3>
 
-            <p>The following is a list of resources that will make <a href="http://springframework.org">Spring</a> infinitely easier to use.</p>
-
-            <ul class="glassList">
-                <li><a href="http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/">Spring 3.0 Docs</a></li>
-                <li><a href="http://static.springsource.org/spring/docs/3.0.x/javadoc-api/">Spring 3.0 API</a></li>
-                <li><a href="http://www.amazon.com/s/ref=nb_ss?url=search-alias%3Daps&field-keywords=spring+framework">Spring Books</a></li>
-                <li><a href="http://forum.springframework.org/">Spring Forums</a></li>
-                <li><a href="http://springmodules.dev.java.net">Spring Modules</a></li>
-            </ul>
-
             <img src="${ctx}/images/image.gif" alt="Click to Change Theme" width="150" height="112" class="right" style="margin: 10px 0 20px 0"
                  onclick="StyleSheetSwitcher.setActive((StyleSheetSwitcher.getActive() == 'default') ? 'green' : 'default')"/>
         </div>
-
-        <div id="nav">
-            <div class="wrapper">
-                <h2 class="accessibility">Navigation</h2>
-                <ul class="clearfix">
-                    <li><a href="${ctx}/" title="Home"><span>Home</span></a></li>
-                    <li><a href="${ctx}/books" title="View Books"><span>Books</span></a></li>
-                    <!-- Add new menu items here -->
-                </ul>
-            </div>
-        </div><!-- end nav -->
-
     </div><!-- end content -->
 
     <div id="footer">

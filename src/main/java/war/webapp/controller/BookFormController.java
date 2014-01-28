@@ -56,7 +56,7 @@ public class BookFormController {
     @ModelAttribute
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST})
     protected Book getBook(HttpServletRequest request) {
-        Long bookId = Long.valueOf(request.getParameter("id"));
+        String bookId = request.getParameter("id");
         if ((bookId != null) && !bookId.equals("")) {
             return bookManager.getBook(bookId);
         } else {
