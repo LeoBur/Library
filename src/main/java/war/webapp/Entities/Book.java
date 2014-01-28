@@ -11,9 +11,9 @@ import java.io.Serializable;
 public class Book implements Serializable {
 
     @Id
-    @Column(name = "isbn")
+    @Column
     @SearchableId
-    public String id;
+    public Long id;
 
     @Column
     @SearchableProperty
@@ -23,11 +23,11 @@ public class Book implements Serializable {
     @SearchableProperty
     public String author;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

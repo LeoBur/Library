@@ -14,7 +14,7 @@ import java.util.List;
 
 
 @Service("bookManager")
-public class BookManager extends GenericManagerImpl<Book, String>{
+public class BookManager extends GenericManagerImpl<Book, Long>{
     
     private BookDao bookDao;
 
@@ -24,7 +24,7 @@ public class BookManager extends GenericManagerImpl<Book, String>{
         this.bookDao = bookDao;
     }
     
-    public Book getBook(String isbn){
+    public Book getBook(Long isbn){
         return bookDao.get(isbn);
     }
     
@@ -43,7 +43,7 @@ public class BookManager extends GenericManagerImpl<Book, String>{
         }
     }
 
-    public void removeBook(String isbn) {
+    public void removeBook(Long isbn) {
         bookDao.remove(isbn);
     }
 

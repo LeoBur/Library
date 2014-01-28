@@ -7,7 +7,7 @@ import war.webapp.Entities.Book;
 import java.util.List;
 
 @Repository
-public class BookDao extends GenericDaoHibernate<Book, String> {
+public class BookDao extends GenericDaoHibernate<Book, Long> {
 
     /**
      * Constructor that sets the entity to User.class.

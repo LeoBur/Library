@@ -8,7 +8,7 @@ public class BookController {
     @Autowired
     BookManager bookManager;
 
-    @RequestMapping("/books")
+    @RequestMapping("/books*")
     public String execute(ModelMap model) {
         model.addAttribute("bookList", bookManager.getBooks());
         return "bookList";
