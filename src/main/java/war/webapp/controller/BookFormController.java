@@ -16,7 +16,7 @@ import war.webapp.Entities.Book;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("/#bookForm")
+@RequestMapping("/bookForm")
 public class BookFormController {
 
     @Autowired

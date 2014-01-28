@@ -10,6 +10,8 @@ import java.io.Serializable;
 @Table(name="Book")
 public class Book implements Serializable {
 
+    private static final long serialVersionUID = 3832626162173359411L;
+
     @Id
     @Column
     @SearchableId
