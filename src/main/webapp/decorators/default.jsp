@@ -58,8 +58,7 @@
 
     <div id="footer">
         <p>
-            <a href="http://www.oswd.org/design/preview/id/2634">Deliciously Blue</a> from <a href="http://www.oswd.org/">OSWD</a> |
-            Design by <a href="http://www.oswd.org/user/profile/id/8377">super j man</a>
+            Design by Leandro Burgos y Leandro Maro</a>
         </p>
     </div>
 </div>

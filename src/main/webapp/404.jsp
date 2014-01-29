@@ -17,7 +17,7 @@
     <script type="text/javascript" src="${ctx}/scripts/global.js"></script>
 </head>
 <body>
-div id="ajaxLoading" style="display: none; position: absolute; top: 0; right: 0; background: red; padding: 5px 10px; color: white">Loading...</div>
+<div id="ajaxLoading" style="display: none; position: absolute; top: 0; right: 0; background: red; padding: 5px 10px; color: white">Loading...</div>
 <a name="top"></a>
 <div id="page">
 
@@ -36,13 +36,9 @@ div id="ajaxLoading" style="display: none; position: absolute; top: 0; right: 0;
     <div id="content">
 
         <div id="main">
-            <h1><decorator:title/></h1>
-            <div id="body">
-                <%@ include file="/messages.jsp"%>
-                <decorator:body/>
-
-                <div id="underground"><decorator:getProperty property="page.underground"/></div>
-            </div>
+            <h1>Page Not Found</h1>
+            <p>The page you requested was not found.  You might try returning to the
+            <a href="<c:url value="/"/>">welcome page</a>.
         </div>
 
         <div id="sub">
@@ -51,13 +47,12 @@ div id="ajaxLoading" style="display: none; position: absolute; top: 0; right: 0;
             <img src="${ctx}/images/image.gif" alt="Click to Change Theme" width="150" height="112" class="right" style="margin: 10px 0 20px 0"
                  onclick="StyleSheetSwitcher.setActive((StyleSheetSwitcher.getActive() == 'default') ? 'green' : 'default')"/>
         </div>
-    </div><!-- end content -->
+    </div>
 
     <div id="footer">
-        <p>
-            <a href="http://www.oswd.org/design/preview/id/2634">Deliciously Blue</a> from <a href="http://www.oswd.org/">OSWD</a> |
-            Design by <a href="http://www.oswd.org/user/profile/id/8377">super j man</a>
-        </p>
+            <p>
+                Design by Leandro Burgos y Leandro Maro</a>
+            </p>
     </div>
 </div>
 </body>

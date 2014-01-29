@@ -2,7 +2,7 @@
 
 <title><fmt:message key="bookList.title"/></title>
 
-<button onclick="location.href='bookForm'" style="float: right; margin-top: -30px; width: 100px">Add Book</button>
+<button onclick="location.href='bookForm'" style="float: right; margin-top: -30px; width: 100px">Manage Books</button>
 
 <display:table name="booklist" class="table" requestURI="books" id="bookList" export="true" pagesize="10" excludedParams="ajax">
     <display:setProperty name="export.pdf.filename" value="books.pdf"/>

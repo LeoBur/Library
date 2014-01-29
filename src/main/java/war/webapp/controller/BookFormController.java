@@ -42,7 +42,7 @@ public class BookFormController {
     public String onSubmit(Book book, BindingResult result, HttpServletRequest request) throws Exception {
 
         if (request.getParameter("cancel") != null)
-            return "redirect:books";
+            return "redirect:/";
 
 
         if (validator != null) { // validator is null during testing
@@ -67,7 +67,7 @@ public class BookFormController {
                     getText("book.saved", book.getTitle()));
         }
 
-        return "redirect:books";
+        return "redirect:/";
     }
 
     @ModelAttribute
