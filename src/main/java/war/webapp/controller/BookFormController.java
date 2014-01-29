@@ -1,5 +1,6 @@
 package war.webapp.controller;
 
+import org.apache.cxf.common.i18n.Exception;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomNumberEditor;
 import org.springframework.context.MessageSource;
@@ -38,7 +39,7 @@ public class BookFormController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String onSubmit(Book book, BindingResult result, HttpServletRequest request) throws Exception {
+    public String onSubmit(Book book, BindingResult result, HttpServletRequest request) throws BookExistException {
 
         if (request.getParameter("cancel") != null)
             return "redirect:books";
