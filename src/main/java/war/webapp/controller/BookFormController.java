@@ -16,7 +16,7 @@ import war.webapp.Entities.Book;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("/bookForm")
+@RequestMapping("/bookForm*")
 public class BookFormController {
 
     @Autowired
@@ -68,7 +68,6 @@ public class BookFormController {
     @ModelAttribute
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST})
     protected Book getBook(HttpServletRequest request) {
-        //Long bookId = Long.valueOf(request.getParameter("id"));
         Long bookId = (Long.getLong(request.getParameter("id")));
         if ((bookId != null) && !bookId.equals("")) {
             return bookManager.getBook(bookId);

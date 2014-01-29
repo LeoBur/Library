@@ -4,10 +4,12 @@ import org.compass.annotations.SearchableId;
 import org.compass.annotations.SearchableProperty;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 @Entity
 @Table(name="Book")
+@XmlRootElement
 public class Book implements Serializable {
 
     private static final long serialVersionUID = 3832626162173359411L;
@@ -24,6 +26,9 @@ public class Book implements Serializable {
     @Column
     @SearchableProperty
     public String author;
+
+    @Version
+    public Integer version;
 
     public Long getId() {
         return id;
@@ -47,5 +52,13 @@ public class Book implements Serializable {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public Integer getVersion(){
+        return version;
+    }
+
+    public void setVersion(Integer version){
+        this.version = version;
     }
 }
