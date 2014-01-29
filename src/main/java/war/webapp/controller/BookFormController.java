@@ -39,7 +39,7 @@ public class BookFormController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String onSubmit(Book book, BindingResult result, HttpServletRequest request) throws BookExistException {
+    public String onSubmit(Book book, BindingResult result, HttpServletRequest request) throws Exception {
 
         if (request.getParameter("cancel") != null)
             return "redirect:books";
@@ -58,7 +58,11 @@ public class BookFormController {
             request.getSession().setAttribute("message",
                     getText("book.deleted", book.getTitle()));
         } else {
-            bookManager.saveBook(book);
+            try {
+                bookManager.saveBook(book);
+            } catch (BookExistException e) {
+                e.getMessage();
+            }
             request.getSession().setAttribute("message",
                     getText("book.saved", book.getTitle()));
         }
@@ -69,7 +73,7 @@ public class BookFormController {
     @ModelAttribute
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST})
     protected Book getBook(HttpServletRequest request) {
-        Long bookId = (Long.getLong(request.getParameter("id")));
+        Long bookId = (Long.getLong(request.getParameter("isbn")));
         if ((bookId != null) && !bookId.equals("")) {
             return bookManager.getBook(bookId);
         } else {

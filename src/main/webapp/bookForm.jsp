@@ -12,14 +12,14 @@
 <form:hidden path="version"/>
 <table class="detail">
 <tr>
-    <th><label for="id">* <fmt:message key="book.isbn"/>:</label></th>
+    <th><label for="isbn"><fmt:message key="book.isbn"/>:</label></th>
     <td>
-        <form:input path="id" id="id"/>
-        <form:errors path="id" cssClass="fieldError"/>
+        <form:input path="isbn" id="isbn"/>
+        <form:errors path="isbn" cssClass="fieldError"/>
     </td>
 </tr>
 <tr>
-    <th><label for="title">* <fmt:message key="book.title"/>:</label></th>
+    <th><label for="title"><fmt:message key="book.title"/>:</label></th>
     <td>
         <form:input path="title" id="title"/>
         <form:errors path="title" cssClass="fieldError"/>
@@ -36,11 +36,7 @@
     <td></td>
     <td>
         <input type="submit" class="button" name="save" value="Save"/>
-      <c:if test="${not empty param.id}">
-      <security:authorize ifAllGranted="ROLE_ADMIN">
         <input type="submit" class="button" name="delete" value="Delete"/>
-      </security:authorize>
-      </c:if>
       	<input type="submit" class="button" name="cancel" value="Cancel" onclick="bCancel=true"/>
     </td>
 </tr>

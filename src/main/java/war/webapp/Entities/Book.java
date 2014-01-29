@@ -17,7 +17,12 @@ public class Book implements Serializable {
     @Id
     @Column
     @SearchableId
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public Long id;
+    
+    @Column(nullable = false, unique = true)
+    @SearchableProperty
+    public Long isbn;
 
     @Column
     @SearchableProperty
@@ -34,8 +39,12 @@ public class Book implements Serializable {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Long getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(Long isbn) {
+        this.isbn = isbn;
     }
 
     public String getTitle() {
