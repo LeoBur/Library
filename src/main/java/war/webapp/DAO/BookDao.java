@@ -18,7 +18,7 @@ public class BookDao extends GenericDaoHibernate<Book, Long> {
 
     @SuppressWarnings("unchecked")
     public List<Book> getBooks() {
-        return getHibernateTemplate().find("from Book b order by upper(b.title)");
+        return getHibernateTemplate().find("SELECT * FROM Book");
     }
 
     public Book saveBook(Book book) {
