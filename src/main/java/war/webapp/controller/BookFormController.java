@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/bookForm*")
-public class BookFormController {
+public class BookFormController extends BaseFormController{
 
     @Autowired
     BookManager bookManager;
@@ -33,6 +33,11 @@ public class BookFormController {
         messages = new MessageSourceAccessor(messageSource);
     }
 
+    public BookFormController(){
+        setCancelView("redirect:books");
+        setSuccessView("redirect:books");
+    }
+
     public void initBinder(ServletRequestDataBinder binder){
         binder.registerCustomEditor(Long.class, null,
                 new CustomNumberEditor(Long.class, null, true));
@@ -42,7 +47,7 @@ public class BookFormController {
     public String onSubmit(Book book, BindingResult result, HttpServletRequest request) throws Exception {
 
         if (request.getParameter("cancel") != null)
-            return "redirect:books";
+            return "redirect:/";
 
 
         if (validator != null) { // validator is null during testing
@@ -54,7 +59,7 @@ public class BookFormController {
         }
 
         if (request.getParameter("delete") != null) {
-            bookManager.removeBook(book.getId());
+            bookManager.removeBook(book.getIsbn());
             request.getSession().setAttribute("message",
                     getText("book.deleted", book.getTitle()));
         } else {
@@ -67,7 +72,7 @@ public class BookFormController {
                     getText("book.saved", book.getTitle()));
         }
 
-        return "redirect:books";
+        return "redirect:/";
     }
 
     @ModelAttribute

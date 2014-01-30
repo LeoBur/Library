@@ -137,17 +137,8 @@ public class BaseFormController implements ServletContextAware {
   @InitBinder
   protected void initBinder(HttpServletRequest request,
                             ServletRequestDataBinder binder) {
-    binder.registerCustomEditor(Integer.class, null,
-        new CustomNumberEditor(Integer.class, null, true));
     binder.registerCustomEditor(Long.class, null,
         new CustomNumberEditor(Long.class, null, true));
-    binder.registerCustomEditor(byte[].class,
-        new ByteArrayMultipartFileEditor());
-    SimpleDateFormat dateFormat =
-        new SimpleDateFormat(getText("date.format", request.getLocale()));
-    dateFormat.setLenient(false);
-    binder.registerCustomEditor(Date.class, null,
-        new CustomDateEditor(dateFormat, true));
   }
 
   public final BaseFormController setCancelView(String cancelView) {

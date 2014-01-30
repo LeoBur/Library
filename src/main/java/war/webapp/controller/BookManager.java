@@ -44,7 +44,11 @@ public class BookManager extends GenericManagerImpl<Book, Long>{
     }
 
     public void removeBook(Long isbn) {
-        bookDao.remove(isbn);
+        try {
+            bookDao.remove(bookDao.loadBookByIsbn(isbn).getId());
+        } catch (BookNotFoundException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
     }
 
     public Book getBookByTitle(String title) throws BookNotFoundException {
