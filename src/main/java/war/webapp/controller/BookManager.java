@@ -37,9 +37,9 @@ public class BookManager extends GenericManagerImpl<Book, Long>{
         try{
             return bookDao.saveBook(book);
         } catch (DataIntegrityViolationException e){
-            throw new BookExistException("Book already exists");
+            throw new BookExistException("Book entitled '" + book.getTitle() + "' already exists");
         } catch (JpaSystemException e){
-            throw new BookExistException("Book already exists");
+            throw new BookExistException("Book entitled '" + book.getTitle() + "' already exists");
         }
     }
 

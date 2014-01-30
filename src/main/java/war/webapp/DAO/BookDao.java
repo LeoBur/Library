@@ -45,7 +45,7 @@ public class BookDao extends GenericDaoHibernate<Book, Long> {
     public Book loadBookByTitle(String title) throws BookNotFoundException {
         List book = getHibernateTemplate().find("from Book where title=?", title);
         if (book == null || book.isEmpty()) {
-            throw new BookNotFoundException("book '" + title + "' not found...");
+            throw new BookNotFoundException("Book entitled '" + title + "' was not found...");
         } else {
             return (Book) book.get(0);
         }
@@ -54,7 +54,7 @@ public class BookDao extends GenericDaoHibernate<Book, Long> {
     public Book loadBookByIsbn(Long isbn) throws BookNotFoundException{
         List book = getHibernateTemplate().find("from Book where isbn=?", isbn);
         if (book == null || book.isEmpty()) {
-            throw new BookNotFoundException("book '" + isbn + "' not found...");
+            throw new BookNotFoundException("Book with ISBN N° '" + isbn + "' was not found...");
         } else {
             return (Book) book.get(0);
         }

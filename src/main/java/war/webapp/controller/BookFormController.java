@@ -46,7 +46,7 @@ public class BookFormController extends BaseFormController{
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String onSubmit(Book book, BindingResult result, HttpServletRequest request) {
+    public String onSubmit(Book book, BindingResult result, HttpServletRequest request) throws BookNotFoundException, BookExistException {
 
         if (request.getParameter("cancel") != null)
             return "redirect:/";
@@ -61,19 +61,11 @@ public class BookFormController extends BaseFormController{
         }
 
         if (request.getParameter("delete") != null) {
-            try {
                 bookManager.removeBook(book.getIsbn());
-            } catch (BookNotFoundException e) {
-                return "error";
-            }
             request.getSession().setAttribute("message",
                     getText("book.deleted", book.getTitle()));
         } else {
-            try {
                 bookManager.saveBook(book);
-            } catch (BookExistException e) {
-                return "error";
-            }
             request.getSession().setAttribute("message",
                     getText("book.saved", book.getTitle()));
         }

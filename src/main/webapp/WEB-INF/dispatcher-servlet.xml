@@ -21,6 +21,12 @@
                 <prop key="org.springframework.dao.DataAccessException">
                     dataAccessFailure
                 </prop>
+                <prop key="war.webapp.DAO.BookExistException">
+                    bookException
+                </prop>
+                <prop key="war.webapp.DAO.BookNotFoundException">
+                    bookException
+                </prop>
             </props>
         </property>
     </bean>
