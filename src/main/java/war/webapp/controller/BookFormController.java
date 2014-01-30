@@ -64,7 +64,7 @@ public class BookFormController extends BaseFormController{
             try {
                 bookManager.removeBook(book.getIsbn());
             } catch (BookNotFoundException e) {
-                return "exception";
+                return "error";
             }
             request.getSession().setAttribute("message",
                     getText("book.deleted", book.getTitle()));
@@ -72,7 +72,7 @@ public class BookFormController extends BaseFormController{
             try {
                 bookManager.saveBook(book);
             } catch (BookExistException e) {
-                return "exception";
+                return "error";
             }
             request.getSession().setAttribute("message",
                     getText("book.saved", book.getTitle()));

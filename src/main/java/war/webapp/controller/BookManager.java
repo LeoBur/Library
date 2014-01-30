@@ -39,7 +39,7 @@ public class BookManager extends GenericManagerImpl<Book, Long>{
         } catch (DataIntegrityViolationException e){
             throw new BookExistException("Book already exists");
         } catch (JpaSystemException e){
-            throw new BookExistException("User already exists");
+            throw new BookExistException("Book already exists");
         }
     }
 
