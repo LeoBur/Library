@@ -29,7 +29,7 @@ public class BookManager extends GenericManagerImpl<Book, Long>{
     }
     
     public List<Book> getBooks(){
-        return bookDao.getBooks();
+        return bookDao.getAllDistinct();
     }
     
     public Book saveBook(Book book) throws BookExistException {
@@ -37,9 +37,9 @@ public class BookManager extends GenericManagerImpl<Book, Long>{
         try{
             return bookDao.saveBook(book);
         } catch (DataIntegrityViolationException e){
-            throw new BookExistException("Book entitled '" + book.getTitle() + "' already exists");
+            throw new BookExistException("Book with ISBN N° '" + book.getIsbn() + "' already exists");
         } catch (JpaSystemException e){
-            throw new BookExistException("Book entitled '" + book.getTitle() + "' already exists");
+            throw new BookExistException("Book with ISBN N° '" + book.getIsbn() + "' already exists");
         }
     }
 

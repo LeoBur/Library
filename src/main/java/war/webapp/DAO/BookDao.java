@@ -16,10 +16,10 @@ public class BookDao extends GenericDaoHibernate<Book, Long> {
         super(Book.class);
     }
 
-    @SuppressWarnings("unchecked")
+    /*@SuppressWarnings("unchecked")
     public List<Book> getBooks() {
         return getHibernateTemplate().find("SELECT * FROM Book");
-    }
+    }*/
 
     public Book saveBook(Book book) {
 

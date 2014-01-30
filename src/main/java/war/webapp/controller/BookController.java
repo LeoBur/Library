@@ -7,13 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/")
 public class BookController {
 
     @Autowired
     BookManager bookManager;
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "/", method = RequestMethod.POST)
     public String execute(ModelMap model) {
         model.addAttribute("bookList", bookManager.getBooks());
         return "bookList";
