@@ -61,28 +61,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bookForm.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/bookForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="31" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bookList.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/bookList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="116" selection-start="726" selection-end="726" vertical-scroll-proportion="0.21428572">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BookController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+            <state line="14" column="32" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,37 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseFormController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/controller/BaseFormController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="56" selection-start="4495" selection-end="4495" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="32" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/default.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="13" selection-start="2519" selection-end="2628" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BookManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/controller/BookManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="12" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
+            <state line="23" column="31" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,8 +84,9 @@
       <file leaf-file-name="BookDao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/DAO/BookDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="60" selection-start="1595" selection-end="1843" vertical-scroll-proportion="0.0">
+            <state line="53" column="70" selection-start="1595" selection-end="1616" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#395#425#0" expanded="true" />
               </folding>
             </state>
@@ -140,7 +96,36 @@
       <file leaf-file-name="BookFormController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/controller/BookFormController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="26" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
+            <state line="73" column="44" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exception.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/exception.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="1" selection-start="246" selection-end="246" vertical-scroll-proportion="0.21072797">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataAccessFailure.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/dataAccessFailure.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="16" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="58" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,22 +146,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dwr.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/sql-map-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/war/webapp/Entities/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/bookForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/decorators/default.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/404.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BookListControlle.java" />
         <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BookListController.java" />
         <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BaseFormController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/war/webapp/DAO/BookDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BookManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BookFormController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/bookList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BookExistException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/war/webapp/DAO/BookNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/war/webapp/DAO/BookDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/exception.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BookManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/war/webapp/DAO/BookExistExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/war/webapp/controller/BookFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/exception.jsp" />
       </list>
     </option>
   </component>
@@ -284,7 +269,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="decorators" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -442,6 +427,10 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="war.webapp.controller" />
       <recent name="war.webapp.DAO" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="war.webapp.DAO" />
+      <recent name="war.webapp.controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -652,6 +641,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -661,11 +651,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21474878" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22690438" sideWeight="0.67108434" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -726,93 +715,121 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql-map-config.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext-validation.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/404.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="4" selection-start="2289" selection-end="2289" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/messages.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.19157088" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="44" selection-start="1555" selection-end="1555" vertical-scroll-proportion="-0.5649351" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/MessageFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="322" selection-end="322" vertical-scroll-proportion="0.07662835" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/bookForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/controller/BaseFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="56" selection-start="4495" selection-end="4495" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/default.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="13" selection-start="2519" selection-end="2628" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/appfuse/appfuse-hibernate/2.1.0/appfuse-hibernate-2.1.0-sources.jar!/org/appfuse/dao/hibernate/GenericDaoHibernate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="16" selection-start="4153" selection-end="4153" vertical-scroll-proportion="0.4827586">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/controller/BookFormController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="26" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/controller/BookManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="12" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
+        <state line="34" column="76" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.66233766">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/DAO/BookDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="60" selection-start="1595" selection-end="1843" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#395#425#0" expanded="true" />
-          </folding>
+        <state line="25" column="51" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.3961039">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dwr.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/urlrewrite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/controller/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+        <state line="14" column="32" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/bookList.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="116" selection-start="726" selection-end="726" vertical-scroll-proportion="0.21428572">
+        <state line="139" column="17" selection-start="4681" selection-end="4681" vertical-scroll-proportion="0.82932997">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/messages.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.18656716">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/404.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/controller/BookFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="44" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/DAO/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="70" selection-start="1595" selection-end="1616" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#395#425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/dataAccessFailure.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="16" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="58" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/war/webapp/DAO/BookExistException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="38" selection-end="38" vertical-scroll-proportion="0.038314175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/exception.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="1" selection-start="246" selection-end="246" vertical-scroll-proportion="0.21072797">
           <folding />
         </state>
       </provider>

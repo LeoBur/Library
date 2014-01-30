@@ -1,12 +1,12 @@
 package war.webapp.controller;
 
-import org.appfuse.service.GenericManager;
 import org.appfuse.service.impl.GenericManagerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.orm.jpa.JpaSystemException;
 import org.springframework.stereotype.Service;
 import war.webapp.DAO.BookDao;
+import war.webapp.DAO.BookExistException;
 import war.webapp.DAO.BookNotFoundException;
 import war.webapp.Entities.Book;
 
@@ -24,12 +24,12 @@ public class BookManager extends GenericManagerImpl<Book, Long>{
         this.bookDao = bookDao;
     }
     
-    public Book getBook(Long isbn){
-        return bookDao.get(isbn);
+    public Book getBook(Long id){
+        return bookDao.get(id);
     }
     
     public List<Book> getBooks(){
-        return bookDao.getAllDistinct();
+        return bookDao.getBooks();
     }
     
     public Book saveBook(Book book) throws BookExistException {
@@ -43,12 +43,8 @@ public class BookManager extends GenericManagerImpl<Book, Long>{
         }
     }
 
-    public void removeBook(Long isbn) {
-        try {
+    public void removeBook(Long isbn) throws BookNotFoundException{
             bookDao.remove(bookDao.loadBookByIsbn(isbn).getId());
-        } catch (BookNotFoundException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
     }
 
     public Book getBookByTitle(String title) throws BookNotFoundException {

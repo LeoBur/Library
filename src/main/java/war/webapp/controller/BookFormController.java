@@ -1,17 +1,19 @@
 package war.webapp.controller;
 
-import org.apache.cxf.common.i18n.Exception;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomNumberEditor;
 import org.springframework.context.MessageSource;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Validator;
 import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import war.webapp.DAO.BookExistException;
+import war.webapp.DAO.BookNotFoundException;
 import war.webapp.Entities.Book;
 
 import javax.servlet.http.HttpServletRequest;
@@ -44,7 +46,7 @@ public class BookFormController extends BaseFormController{
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String onSubmit(Book book, BindingResult result, HttpServletRequest request) throws Exception {
+    public String onSubmit(Book book, BindingResult result, HttpServletRequest request) {
 
         if (request.getParameter("cancel") != null)
             return "redirect:/";
@@ -59,14 +61,18 @@ public class BookFormController extends BaseFormController{
         }
 
         if (request.getParameter("delete") != null) {
-            bookManager.removeBook(book.getIsbn());
+            try {
+                bookManager.removeBook(book.getIsbn());
+            } catch (BookNotFoundException e) {
+                return "exception";
+            }
             request.getSession().setAttribute("message",
                     getText("book.deleted", book.getTitle()));
         } else {
             try {
                 bookManager.saveBook(book);
             } catch (BookExistException e) {
-                e.getMessage();
+                return "exception";
             }
             request.getSession().setAttribute("message",
                     getText("book.saved", book.getTitle()));
@@ -97,4 +103,5 @@ public class BookFormController extends BaseFormController{
     public String getText(String msgKey, Object[] args) {
         return messages.getMessage(msgKey, args);
     }
+
 }

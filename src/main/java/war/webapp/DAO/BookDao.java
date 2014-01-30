@@ -24,7 +24,7 @@ public class BookDao extends GenericDaoHibernate<Book, Long> {
     public Book saveBook(Book book) {
 
         getHibernateTemplate().saveOrUpdate(book);
-        // necessary to throw a DataIntegrityViolation and catch it in UserManager
+        // necessary to throw a DataIntegrityViolation and catch it in BookManager
         getHibernateTemplate().flush();
         return book;
     }
@@ -51,7 +51,7 @@ public class BookDao extends GenericDaoHibernate<Book, Long> {
         }
     }
 
-    public Book loadBookByIsbn(Long isbn) throws BookNotFoundException {
+    public Book loadBookByIsbn(Long isbn) throws BookNotFoundException{
         List book = getHibernateTemplate().find("from Book where isbn=?", isbn);
         if (book == null || book.isEmpty()) {
             throw new BookNotFoundException("book '" + isbn + "' not found...");
